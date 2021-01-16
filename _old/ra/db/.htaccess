@@ -1,5 +1,0 @@
-Options -Indexes
-<FilesMatch (ra.sqlite3|_adminer.php|error.log)>
-  order allow,deny
-  deny from all
-</FilesMatch>

@@ -1,3 +1,0 @@
-#<IfModule mod_alias.c>
-#RedirectMatch 301 ^/imhoff/$ https://www.dondi.cloud/imhoff/public
-#</IfModule>
