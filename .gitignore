@@ -32,11 +32,13 @@ node_modules/
 # Misc
 .DS_Store
 Thumbs.db
-
+_old/
+_test/
 
 #api directories
 api/.env
 api/database/database.sqlite
+api/vendor
 
 
 
