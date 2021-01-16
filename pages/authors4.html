@@ -1,0 +1,106 @@
+<template>
+	<div class="page">
+		<div class="navbar">
+			<div class="navbar-bg"></div>
+			<div class="navbar-inner sliding">
+				<div class="left">
+					<a href="#" class="back link">
+						<i class="icon icon-back"></i>
+						<span class="if-not-md">{{_e 'Back'}}</span>
+					</a>
+				</div>
+				<div class="title">{{_e 'Authors'}}</div>
+				<div class="right">
+					<!-- Link to enable searchbar -->
+					<a class="link icon-only searchbar-enable" data-searchbar=".searchbar-authors">
+						<i class="icon f7-icons if-not-md">search</i>
+						<i class="icon material-icons md-only">search</i>
+					</a>
+				</div>
+				<form data-search-container=".search-list" data-search-in=".item-title" class="searchbar searchbar-expandable searchbar-init searchbar-authors">
+					<div class="searchbar-inner">
+						<div class="searchbar-input-wrap">
+							<input type="search" placeholder="Search">
+							<i class="searchbar-icon"></i>
+							<span class="input-clear-button"></span>
+						</div>
+						<span class="searchbar-disable-button if-not-aurora">Cancel</span>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="fab fab-right-bottom">
+			<a href="#">
+				<i class="icon f7-icons">plus</i>
+			</a>
+		</div>
+		
+		<div class="page-content">
+			
+			<div class="list media-list search-list searchbar-found">
+				<ul>
+					{{#each rs}}
+					<li class="swipeout">
+						<div class="swipeout-content">
+							<a href="#" class="item-link item-content">
+								<div class="item-media">
+									<img src="assets/img/user.png" width="44"/>
+									
+								</div>
+								
+								<div class="item-inner">
+									<div class="item-title-row">
+										<div class="item-title">{{this.name}}</div>
+										
+										
+									</div>
+									<div class="item-subtitle">{{this.email}}</div>
+									
+								</div>
+							</a>
+							
+						</div>
+						
+						<div class="swipeout-actions-left">
+							<a href="#" class="color-green swipeout-overswipe alert-reply">Reply</a>
+							<a href="#" class="color-blue alert-forward">Forward</a>
+						</div>
+						<div class="swipeout-actions-right">
+							<a href="#" class="open-more-actions">More</a>
+							<a href="#" class="color-orange alert-mark">Mark</a>
+							<a href="#" data-confirm="{{_e 'Are you sure you want to delete this item?'}}" class="swipeout-delete swipeout-overswipe">{{_e Delete}}</a>
+						</div>
+						
+						
+						
+					</li>
+					{{/each}}
+					
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</template>
+<script>
+	
+	return {
+		
+		methods: {
+			openAlert: function () {
+				var self = this;
+				self.$app.dialog.alert('Hello world!');
+			},
+		},
+		on: {
+			pageInit: function (e, page) {
+			// do something on page init
+			console.log('pageInit');
+			},
+			pageAfterOut: function (e, page) {
+				// page has left the view
+				console.log('pageAfterOut');
+			},
+		}
+	}
+</script>

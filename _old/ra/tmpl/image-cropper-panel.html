@@ -1,0 +1,10 @@
+<div id="<%= key %>" data-role="panel" data-display="overlay" data-position="right" data-theme="b">
+    <ul data-role="listview" data-icon="false">
+        <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+    </ul>
+    <div class="ui-content">
+    <%  _.each(o,function(i){   %>
+            <img class="img2cropit" src="<%= i %>">
+    <% }); %>
+    </div>
+</div> 

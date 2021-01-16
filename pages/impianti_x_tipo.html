@@ -1,0 +1,82 @@
+<template>
+	<div id="p-impianti-tipo" class="page">
+		<div class="navbar">
+			<div class="navbar-bg"></div>
+			<div class="navbar-inner sliding">
+				<div class="left">
+					<a href="#" class="back link">
+						<i class="icon icon-back"></i>
+						<span class="if-not-md">{{_e 'Back'}}</span>
+					</a>
+				</div>
+				<div class="title">{{rs[0]?.tipo}}</div>
+				<div class="right">
+					<!-- Link to enable searchbar -->
+					<a class="link icon-only searchbar-enable" data-searchbar=".p-impianti-tipo-searchform">
+						<i class="icon f7-icons if-not-md">search</i>
+						<i class="icon material-icons md-only">search</i>
+					</a>
+					<a class="link sheet-open" href="#" data-sheet=".my-sheet-map">
+						<i class="icon f7-icons">map_pin_ellipse</i>
+					</a>
+				</div>
+				<form data-search-container=".search-list" data-search-in=".item-inner" class="searchbar searchbar-expandable searchbar-init p-impianti-tipo-searchform">
+					<div class="searchbar-inner">
+						<div class="searchbar-input-wrap">
+							<input type="search" placeholder="Search">
+							<i class="searchbar-icon"></i>
+							<span class="input-clear-button"></span>
+						</div>
+						<span class="searchbar-disable-button if-not-aurora">{{_e 'Cancel'}}</span>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="sheet-modal my-sheet-map" data-close-on-escape="false" data-swipe-to-close="true">
+			<div id="p-impianti-tipo-map" class="sheet-modal-inner"></div>
+		</div>
+		
+		<div class="page-content">		
+				<div class="list media-list search-list searchbar-found" style="margin-top:0;">
+				<ul>
+					{{#each rs}}
+					<li>
+						<a href="/impianto/{{this.id}}/" class="item-link item-content">
+							<div class="item-inner">
+								
+								<div class="item-title-row">
+									<div class="item-title">{{this.impianto}}</div>
+									<div class="item-after">{{this.codice}}</div>
+								</div>
+								<div class="item-subtitle">{{this.comune}}</div>
+								<div class="item-text"></div>
+							</div>
+						</a>
+					</li>
+					{{/each}}
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</template>
+<style>
+	#p-impianti-tipo-map{width:100%; height: 100%;}
+</style>
+<script>	
+	return {
+		methods: {
+			openAlert: function () {
+				var self = this;
+				self.$app.dialog.alert('Hello World');
+			},
+		},
+		on: {
+			pageInit: function(e, page) {
+				app.methods.initMap('p-impianti-tipo-map',e.detail.route.context.rs);  // build google map
+				if(app.data.bOpenMapOnInit) app.sheet.open('.sheet-modal');
+				
+			},
+		},
+	};
+</script>

@@ -1,0 +1,84 @@
+<template>
+	<div id="{{pageName}}" class="page">
+		<div class="navbar">
+			<div class="navbar-bg"></div>
+			<div class="navbar-inner sliding">
+				<div class="left">
+					<a href="#" class="back link">
+						<i class="icon icon-back"></i>
+						<span class="if-not-md">{{_e 'Back'}}</span>
+					</a>
+				</div>
+				<div class="title">{{rs?.title}}</div>
+				<div class="right">
+					<!-- Link to enable searchbar -->
+					<a class="link icon-only searchbar-enable" data-searchbar=".{{pageName}}-searchbar">
+						<i class="icon f7-icons if-not-md">search</i>
+						<i class="icon material-icons md-only">search</i>
+					</a>
+					<a class="link sheet-open" href="#" data-sheet=".{{pageName}}-sheet-map">
+						<i class="icon f7-icons">map_pin_ellipse</i>
+					</a>
+				</div>
+				<form data-search-container=".search-list" data-search-in=".item-title" class="searchbar searchbar-expandable searchbar-init {{pagename}}-searchbar">
+					<div class="searchbar-inner">
+						<div class="searchbar-input-wrap">
+							<input type="search" placeholder="Search">
+							<i class="searchbar-icon"></i>
+							<span class="input-clear-button"></span>
+						</div>
+						<span class="searchbar-disable-button if-not-aurora">{{_e 'Cancel'}}</span>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div class="sheet-modal {{pageName}}-sheet-map" data-close-on-escape="false" data-swipe-to-close="true">
+			<div id="{{pageName}}-map" class="sheet-modal-inner"></div>
+		</div>
+		
+		<div class="page-content">		
+			<div class="block-title">Tipi e numero impianti in {{rs?.title}}</div>
+			<div class="list search-list searchbar-found">
+				<ul>
+					{{#each rs['tipi'] }}
+					<li>
+						<a href="/impianti/comuni/{{this.comune}}/tipi/{{this.tipo}}/" class="item-link item-content">
+							<div class="item-inner">
+								<div class="item-title">{{this.tipo}}</div>
+								<div class="item-after"> <span class="badge">{{this.cnt}}</span></div>
+							</div>
+						</a>
+					</li>
+					{{/each}}
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</template>
+<script>
+	const pageName = 'p-tixc';
+	return {
+		methods: {
+			openAlert: function () {
+				var self = this;
+				self.$app.dialog.alert('Hello World');
+			},
+		},
+		data: function () {
+		  return {
+			pageName: pageName,
+		  }
+		},
+		on: {
+			pageInit: function(e, page) {
+				var m = e.detail.route.context?.rs?.map || []
+				  , z = 11, lat = m[0]?.latitude, lng = m[0]?.longitude;
+				
+				app.methods.initMap(pageName+'-map',m,z,lat,lng);  // build google map
+				if(app.data.bOpenMapOnInit) app.sheet.open('.'+pageName+'-sheet-map');
+			},
+		},
+	};
+</script>

@@ -1,0 +1,21 @@
+<div class="ui-grid-a">
+    <div class="ui-block-a">
+        <div id="image-cropper">
+            <div class="ui-grid-a"><div class="ui-block-a">
+                <div class="cropit-preview"></div>
+                <div class="full-width-slider">
+                    <input type="range" data-mini="true" data-highlight="true" class="cropit-image-zoom-input" />
+                </div>
+                <input type="file" class="cropit-image-input" />
+                <input type="hidden" name="<%= name %>" class="cropit-image-data" />
+            </div><div class="ui-block-b">
+                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-nodisc-icon ui-icon-back    ui-btn-icon-notext ui-btn-b rotate-cw-btn">CW</a>
+                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-nodisc-icon ui-icon-forward ui-btn-icon-notext ui-btn-b rotate-ccw-btn">CCW</a>
+            </div></div>    
+        </div>
+    </div>
+    <div class="ui-block-b">
+        <a href="#"           class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-camera select-image-btn">To load</a>
+        <a href="#<%= key %>" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-bars" >Loaded</a>  
+    </div>
+</div><!-- /grid-a -->

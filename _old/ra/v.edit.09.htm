@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+
+<link href="//cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video-js.min.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"> </script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video.js"></script>
+<script src="//cdn.sc.gl/videojs-hotkeys/latest/videojs.hotkeys.min.js"></script>
+<style>
+  #cv1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color:rgba(255,0,0,0.1);
+}
+.vjs-icon-myb1 {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+.vjs-icon-myb1:before {
+	content: "\f11f"; }
+</style>
+</head>
+<body>
+<div class="container">
+ <video id="vd1" class="video-js vjs-default-skin" controls preload="auto">
+               <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+               <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+ </video>
+ <canvas id="cv1"></canvas>
+</div>
+
+ <script type="text/javascript">
+  var gvidj = videojs('vd1').ready(function() {
+  this.hotkeys({
+    volumeStep: 0.1,
+    seekStep: 5,
+    enableModifiersForNumbers: false
+  });
+});
+ //https://github.com/videojs/video.js/issues/3473
+
+var vjsButton = videojs.getComponent("Button");
+var Myb1 = videojs.extend(vjsButton, {
+   constructor: function(){
+		vjsButton.apply(this, arguments);
+		this.controlText("Some text");
+   },
+   handleClick: function() {
+	//do something on click for example
+	
+   },
+   buildCSSClass: function() {
+	return "vjs-icon-myb1 vjs-control vjs-button";
+   }
+});
+videojs.registerComponent("Myb1", Myb1);
+gvidj.getChild('controlBar').addChild('myb1', {});
+
+
+
+
+ function setup(){
+	var video = document.getElementById("vd1");
+	var canvas = document.getElementById("cv1");
+	canvas.width = video.clientWidth;
+	canvas.height = video.clientHeight;
+	var ctx = canvas.getContext("2d");
+
+	video.addEventListener("pause", function(){
+		var w = video.offsetWidth; //clientWidth
+		var h = video.offsetHeight;
+		canvas.width = w;
+		canvas.height = h;
+
+		ctx.drawImage(video,0,0);
+		var data = ctx.getImageData(0,0,w, h);
+		ctx.putImageData(data,0,0); 
+	 
+
+	 }, false);
+	 
+	var mouse = {x: 0, y: 0};
+	var onPaint = function() {
+		ctx.lineWidth = 5;
+		ctx.lineJoin = 'round';
+		ctx.lineCap = 'round';
+		ctx.strokeStyle = '#00FF00';
+		ctx.lineTo(mouse.x, mouse.y);
+		ctx.stroke();
+	};
+
+	
+	canvas.addEventListener('mousedown', function(e) {
+		ctx.beginPath();
+		ctx.moveTo(mouse.x, mouse.y);
+		canvas.addEventListener('mousemove', onPaint, false);
+	}, false);
+	canvas.addEventListener('mousemove', function(e) {
+		mouse.x = e.pageX - this.offsetLeft;
+		mouse.y = e.pageY - this.offsetTop;
+	}, false); 
+	canvas.addEventListener('mouseup', function() {
+		canvas.removeEventListener('mousemove', onPaint, false);
+	}, false);
+
+ }
+function resize_canvas(element) {
+  var w = element.offsetWidth;
+  var h = element.offsetHeight;
+  var cv = document.getElementById("cv1");
+  cv.width = w;
+  cv.height =h;
+}
+
+
+
+
+
+ setup();
+ </script>
+</body>
+</html>

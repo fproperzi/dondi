@@ -1,0 +1,248 @@
+<html><head>
+<title>tree</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<script type="text/javascript" src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+<style>
+.ui-li-static.ui-collapsible > .ui-collapsible-heading {
+    margin: 0;
+}
+.ui-li-static.ui-collapsible {
+    padding: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > .ui-btn {
+    border-top-width: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-heading.ui-collapsible-heading-collapsed > .ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-bottom-width: 0;
+}
+
+
+.custom {
+     padding: 0;
+}
+
+.custom > div {
+    margin: 0;
+}
+
+.custom > div > label {
+    border-radius: 0;
+    border: 0;
+}
+
+.clpas > div.ui-collapsible-content {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+/* <a> tag button */
+.custom-btn {
+    background: green !important;
+}
+.custom-btn .ui-btn-inner .ui-btn-text {
+    color: #013301 !important;
+}
+/* <input> tag button */
+#wrapper .ui-btn {
+    background: orange;    
+}
+#wrapper .ui-btn .ui-btn-inner .ui-btn-text {
+    color: #472f01;   
+}
+</style>
+</head>
+<body class="ui-mobile-viewport"> 
+    
+
+
+<div id="page-usr-signin" data-role="page" data-theme="b">
+	<div data-role="header" data-position="fixed"  data-tap-toggle="false" >
+		 <h1 data-i18n="signin">Sign-in</h1>
+	</div>
+   <div data-role="content" >   
+
+   <form>
+
+<ul data-role="listview" data-split-icon="info">
+    <li><a href="#" class="custom"><label><input type="checkbox" name="r[]"/>1</label></a><a href="#"></a></li>
+    
+    <li data-role="collapsible" data-iconpos="right" data-inset="false" class="clps"><h2>2</h2>
+        
+        <ul data-role="listview" data-split-icon="info">
+        <fieldset>
+            <li><a href="#" class="custom"><label><input type="checkbox" name="r[]"/>2.1</label></a><a href="#"></a><li>
+            <li><a href="#" class="custom"><label><input type="checkbox" name="r[]"/>2.2</label></a><a href="#"></a><li>
+            <li><a href="#" class="custom"><label><input type="checkbox" name="r[]"/>2.3</label></a><a href="#"></a><li>
+            <li><a href="#" class="custom"><label><input type="checkbox" name="r[]"/>2.4</label></a><a href="#"></a><li>
+        </fieldset>
+        </ul>
+        
+    </li>
+    
+    <li><a href="#" class="custom"><label><input type="checkbox" name="cb2"/>3</label></a><a href="#"></a></li>
+    
+    <li data-role="collapsible" data-iconpos="right" class="clps"><h2>4</h2>
+        <fieldset data-role="controlgroup">
+            <label><input type="checkbox" name="r[]"/>4.1</label>
+            <label><input type="checkbox" name="r[]"/>4.2</label>
+            <label><input type="checkbox" name="r[]"/>4.3</label>
+            <label><input type="checkbox" name="r[]"/>4.4</label>
+        </fieldset>
+    </li>
+    
+   <li data-role="collapsible" data-iconpos="right" class="clps"><h2>5</h2>
+        <ul data-role="listview" data-split-icon="info">
+        <fieldset>
+            <li><a href="#" class="custom"><label><input type="checkbox" name="r[]"/>2.1</label></a><a href="#"></a><li>
+            <li><a href="#" class="custom"><label><input type="checkbox" name="r[]"/>2.2</label></a><a href="#"></a><li>
+            <li><a href="#" class="custom"><label><input type="checkbox" name="r[]"/>2.3</label></a><a href="#"></a><li>
+            <li><a href="#" class="custom"><label><input type="checkbox" name="r[]"/>2.4</label></a><a href="#"></a><li>
+        </fieldset>
+        </ul>
+    </li>
+</ul>
+
+  </form>
+
+<br><hr><br>&nbsp;<br>
+<fieldset>
+    <ul data-role="listview" data-split-icon="delete" >
+        <li>
+            <a href="#" class="custom">
+                <input type="checkbox" name="cb1" id="cb1" />
+                <label for="cb1">checkbox 1</label>
+            </a>
+            <a href="#"></a>
+        </li>
+        <li>
+            <a href="#" class="custom">
+                <input type="checkbox" name="cb2" id="cb2" />
+                <label for="cb2">checkbox 2</label>
+            </a>
+            <a href="#"></a>
+        </li>
+        <li>
+            <a href="#" class="custom">
+                <input type="checkbox" name="cb3" id="cb3" />
+                <label for="cb3">checkbox 3</label>
+            </a>
+            <a href="#"></a>
+        </li>
+    </ul>
+</fieldset>
+
+<br><hr><br>&nbsp;<br>
+
+
+<ul data-role="listview" data-split-icon="info" >
+    <li>
+        <a href="#" style="padding: 0px 0px 0px 0px !important;margin: 0px 0px 0px 0px !important;">
+            <label style="padding: 20px 10px 0px 10px !important;margin: 0px 10px 0px 0px !important;border-width: 0px 1px 0px 0px !important;height:50px;float:left;width:50px;" data-corners="false">
+                <fieldset data-role="controlgroup" style="height:0px !important">
+                    <input id="checkbox_15382" name="checkbox_15382" class="item_checkbox" type="checkbox" value="false"/>
+                </fieldset>						
+            </label>
+            <div>
+                <h2 style="padding: 10px 0px 0px 0px">15382</h2>
+                <p>11/12/2013 10:16:41 AM</p>
+            </div>
+            <a href="#"></a>
+    </li>
+    <li>
+        <a href="/Controller/Item?id=15381" rel="external" style="padding: 0px 0px 0px 0px !important;margin: 0px 0px 0px 0px !important;">
+            <label style="padding: 20px 10px 0px 10px !important;margin: 0px 10px 0px 0px !important;border-width: 0px 1px 0px 0px !important;height:50px;float:left;width:50px;" data-corners="false">
+                <fieldset data-role="controlgroup" style="height:0px !important">
+                    
+                    <input id="checkbox_15381" name="checkbox_15381" class="item_checkbox" type="checkbox" value="false"/>
+                </fieldset>						
+            </label>
+            <div>
+                    <img src="http://farm6.staticflickr.com/5533/10815278476_62679850a1_s.jpg" style="height:60px;width:60px;float:left;padding-right:10px;"/>
+                <h2 style="padding: 10px 0px 0px 0px">15381</h2>
+                <p>11/12/2013 10:16:26 AM</p>
+            </div>
+            <a href="#itemInfo_15381" data-rel="popup" data-position-to="window" data-inline="true"></a>
+            <div data-role="popup" id="itemInfo_15381" class="ui-corner-all" style="padding: 10px 10px 10px 10px">
+                <table data-role="table" id="movie-table" data-mode="reflow" class="ui-responsive table-stroke">
+                <thead><tr><th data-priority="1"></th><th data-priority="persist"></th></tr></thead><tbody>
+                <tr><th>
+                    <a href="/Controller/Users?search_by=ItemId&amp;search=15381" rel="external">Users...</a>
+                </th><td>
+                    <a href="/Controller/Projects?search_by=ItemId&amp;search=15381" rel="external">Projects...</a>
+                </td></tr>
+                <tr><th>
+                    <a href="/Controller/ItemMeasurements/15381?sort=Timemark&sortdir=DESC" rel="external">Measurements...</a>
+                </th><td></td></tr>
+                <tr><th>ID</th><td>15381</td></tr>
+                <tr><th>Registration</th><td></td></tr>
+                </tbody></table>
+                <a href="#" data-role="button" data-inline="true" data-rel="back" data-mini="true" data-theme="b">Close</a>
+            </div>
+            </a>
+    </li>
+</ul>
+
+
+
+<a href="#" data-role="button" class="custom-btn">Link button</a>
+<div id="wrapper">
+    <input type="button" value="Classic HTML button"/>
+</div>
+<!--
+  <li data-role="collapsible" data-iconpos="right" data-inset="false">
+    <h2>
+        
+           <label style="padding: 20px 10px 0px 10px !important;margin: 0px 10px 0px 0px !important;border-width: 0px 1px 0px 0px !important;height:50px;float:left;width:50px;">
+            <input type="checkbox" name="roles[]" value="12" class="r-pid" id="123">lola</label>
+        
+    </h2>
+    <ul data-role="listview" data-theme="b">
+      <li><a href="#">Condor</a></li>
+      <li><a href="#">Eagle</a></li>
+      <li data-role="collapsible" data-iconpos="right" data-inset="false">
+        <h2>Fish</h2>
+        <ul data-role="listview" data-theme="b">
+          <li><a href="#">Salmon</a><href="#"></a></li>
+          <li><a href="#">Pollock</a></li>
+            <li data-role="collapsible" data-iconpos="right" data-inset="false">
+            <h2>Choose your preference</h2>
+            <form>
+              <fieldset data-role="controlgroup" data-type="horizontal">
+                <label>Birds<input type="checkbox" id="choose-birds-regular"></label>
+                <label>Humans<input type="checkbox" id="choose-humans-regular"></label>
+                <label>Fish<input type="checkbox" id="choose-fish-regular"></label>
+              </fieldset>
+            </form>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#">Humans</a></li>
+  
+
+</ul>
+-->
+
+
+</div><!-- /content --> 
+    <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+        <div data-role="navbar" data-iconpos="right">
+            <ul>    
+                <li><a href="#page-usr-forgot" data-icon="carat-r">forgot</a></li>
+                <li><a href="#pop-usr-forgot" data-icon="carat-r">pop forgot</a></li>
+                <li><a href="#page-usr-reset" data-icon="carat-r">reset</a></li>
+                <li><a href="#page-usr-signup" data-icon="carat-r">signup</a></li>
+
+            </ul>
+        </div><!-- /navbar -->
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+</body></html>

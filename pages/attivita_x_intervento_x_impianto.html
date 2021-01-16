@@ -1,0 +1,101 @@
+<template>
+	<div id="{{pageName}}" class="page">
+		<div class="navbar">
+			<div class="navbar-bg"></div>
+			<div class="navbar-inner sliding">
+				<div class="left">
+					<a href="#" class="back link">
+						<i class="icon icon-back"></i>
+						<span class="if-not-md">{{_e 'Back'}}</span>
+					</a>
+				</div>
+				<div class="title">{{_e 'Interventi'}}</div>
+				<div class="right">
+					<!-- Link to enable searchbar -->
+					<a class="link icon-only searchbar-enable" data-searchbar=".{{pageName}}-searchbar">
+						<i class="icon f7-icons if-not-md">search</i>
+						<i class="icon material-icons md-only">search</i>
+					</a>
+					<a class="link sheet-open" href="#" data-sheet=".{{pageName}}-sheet-map">
+						<i class="icon f7-icons">map_pin_ellipse</i>
+					</a>
+				</div>
+				<form data-search-container=".search-list" data-search-in=".item-title" class="searchbar searchbar-expandable searchbar-init {{pagename}}-searchbar">
+					<div class="searchbar-inner">
+						<div class="searchbar-input-wrap">
+							<input type="search" placeholder="Search">
+							<i class="searchbar-icon"></i>
+							<span class="input-clear-button"></span>
+						</div>
+						<span class="searchbar-disable-button if-not-aurora">{{_e 'Cancel'}}</span>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div class="sheet-modal {{pageName}}-sheet-map" data-close-on-escape="false" data-swipe-to-close="true">
+			<div id="{{pageName}}-map" class="sheet-modal-inner"></div>
+		</div>
+		
+		<div class="toolbar tabbar toolbar-bottom">
+			<div class="toolbar-inner">
+				<a href="#{{pageName}}-tab1" class="tab-link tab-link-active"><i class="icon f7-icons if-not-md">textformat_abc</i></a>
+				<a href="#{{pageName}}-tab2" class="tab-link">				  <i class="icon f7-icons if-not-md">hammer</i></a>
+				<a href="#{{pageName}}-tab3" class="tab-link">				  <i class="icon f7-icons if-not-md">eyeglasses</i></a>
+				<a href="#{{pageName}}-tab4" class="tab-link">				  <i class="icon f7-icons if-not-md">rocket</i></a>
+				<a href="#{{pageName}}-tab5" class="tab-link">				  <i class="icon f7-icons if-not-md">photo</i></a>
+			</div>
+		</div>
+		<div class="tabs-swipeable-wrap">
+			<div class="tabs">
+				<div id="{{pageName}}-tab1" class="page-content tab tab-active">
+					<div class="block">Manutenzione Ordinaria</div>
+				</div>
+				<div id="{{pageName}}-tab2" class="page-content tab">
+					<div class="block">Manutenzione Straordinaria</div>
+				</div>
+				<div id="{{pageName}}-tab4" class="page-content tab">
+					<div class="block">Letture</div>
+				</div>
+				<div id="{{pageName}}-tab3" class="page-content tab">
+					<div class="block">Asporti</div>
+				</div>
+				<div id="{{pageName}}-tab5" class="page-content tab">
+					<div class="block">Foto</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+</template>
+<script>
+	const pageName = 'p-axi';
+	//debugger;
+	return {
+		methods: {
+			dateFmt(s){
+				
+			},
+			openAlert: function () {
+				var self = this;
+				self.$app.dialog.alert('Hello World');
+			},
+			},
+			data: function () {
+				return {
+					pageName: pageName,
+				}
+			},
+			on: {
+				pageInit: function(e, page) {
+					var m = e.detail.route.context?.rs?.impianti || []
+					, z = 11, lat = m[0]?.latitude, lng = m[0]?.longitude;
+					
+					app.methods.initMap(pageName+'-map',m,z,lat,lng);  // build google map
+					if(app.data.bOpenMapOnInit) app.sheet.open('.'+pageName+'-sheet-map');
+				},
+			},
+			};
+			</script>
+						

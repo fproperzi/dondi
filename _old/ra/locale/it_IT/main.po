@@ -1,0 +1,1074 @@
+msgid   "l.cfg.publict-key"
+msgstr  "Chiave pubblica"
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the RugbyAssistant package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: RugbyAssistant 3.10\n"
+        "Report-Msgid-Bugs-To: fproperzi@gmail.com\n"
+        "POT-Creation-Date: 2020-03-15 19:08+0100\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+        "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: ../403.php:8 ../index.php:112 ../index.php:113 ../index.php:114
+#: ../index.php:115 ../index.php:129 ../index.php:130 ../index.php:131
+#: ../p_dbadmin.php:16 ../p_edit_tags.php:272 ../p_edit_tags.php:396
+#: ../p_home.php:13 ../p_home.php:20 ../p_users.php:208 ../p_users.php:209
+#: ../p_users.php:265 ../p_users.php:266 403.php:8 index.php:126 index.php:127
+#: index.php:128 p_dbadmin.php:16 p_home.php:3 p_home.php:10 p_users.php:208
+#: p_users.php:267
+msgid   "Home"
+msgstr  "Home"
+
+#: ../403.php:11
+msgid   "403 Forbidden"
+msgstr  "Accesso Non Consentito"
+
+#: ../404.php:11
+msgid   "404 Not Found"
+msgstr  "La pagina richiesta NON esiste!"
+
+#: ../config_func.php:99 ../config_func.php:100 ../locale.php:89
+#: ../locale.php:90 ../locale.php:91 ../locale.php:92 config_func.php:97
+msgid   "waiting please"
+msgstr  "Attendere prego"
+
+#: ../config_func.php:100 ../config_func.php:101 config_func.php:98
+msgid   "error"
+msgstr  "errore"
+
+#: ../config_func.php:101 ../config_func.php:102 config_func.php:99
+msgid   "warning"
+msgstr  "Attenzione!"
+
+#: ../config_func.php:102 ../config_func.php:103 config_func.php:100
+msgid   "info"
+msgstr  "Informazioni"
+
+#: ../config_func.php:103 ../config_func.php:104 config_func.php:101
+msgid   "server error"
+msgstr  "Errore in risposta dal server"
+
+#: ../config_func.php:104 ../config_func.php:105 config_func.php:102
+msgid   "working"
+msgstr  "In lavorazione"
+
+#: ../config_func.php:105 ../config_func.php:106
+msgid   "recognized user"
+msgstr  "Utente riconosciuto"
+
+#: ../config_func.php:106 ../config_func.php:107 ../p_login.php:50
+#: ../p_users.02.php:145
+msgid   "unrecognized action"
+msgstr  ""
+
+#: ../config_func.php:107 ../config_func.php:108
+msgid   "confirm delete"
+msgstr  "Vuoi cancellare questo record?\n"
+        "Questa azione non può essere annullata."
+
+#: ../config_func.php:108 ../config_func.php:109 ../config_func.php:140
+#: ../config_func.php:141 ../p_login.php:93 ../p_login.php:96
+#: ../p_login.php:116
+msgid   "yes"
+msgstr  "Si"
+
+#: ../config_func.php:109 ../config_func.php:110 ../config_func.php:140
+#: ../config_func.php:141 ../p_login.php:92 ../p_login.php:95
+#: ../p_login.php:115
+msgid   "no"
+msgstr  "No"
+
+#: ../config_func.php:110 ../config_func.php:111
+msgid   "ok"
+msgstr  "ok"
+
+#: ../config_func.php:111 ../config_func.php:112
+msgid   "ignore"
+msgstr  "Ignora"
+
+#: ../config_func.php:112 ../config_func.php:113
+msgid   "cancel"
+msgstr  "Cancella"
+
+#: ../config_func.php:113 ../config_func.php:114
+msgid   "delete"
+msgstr  "Elimina"
+
+#: ../config_func.php:114 ../config_func.php:115
+msgid   "update"
+msgstr  "Aggiorna"
+
+#: ../config_func.php:115 ../config_func.php:116
+msgid   "new"
+msgstr  "Nuovo"
+
+#: ../config_func.php:116 ../config_func.php:117 ../p_edit_config.php:151
+#: ../p_edit_config.php:152 ../p_edit_config.php:176
+msgid   "save"
+msgstr  "Salva"
+
+#: ../config_func.php:117 ../config_func.php:118
+msgid   "copy"
+msgstr  "Copia"
+
+#: ../config_func.php:118 ../config_func.php:119
+msgid   "remind me"
+msgstr  "Ricordami"
+
+#: ../config_func.php:139 ../config_func.php:140
+msgid   "center"
+msgstr  "Centro"
+
+#: ../config_func.php:139 ../config_func.php:140
+msgid   "flanker"
+msgstr  "Terza Ala"
+
+#: ../config_func.php:139 ../config_func.php:140
+msgid   "fly-half"
+msgstr  "Apertura"
+
+#: ../config_func.php:139 ../config_func.php:140
+msgid   "full-back"
+msgstr  "Estremo"
+
+#: ../config_func.php:139 ../config_func.php:140 ../locale.php:90
+msgid   "hoker"
+msgstr  "Tallonatore"
+
+#: ../config_func.php:139 ../config_func.php:140
+msgid   "lock"
+msgstr  "Seconda linea"
+
+#: ../config_func.php:139 ../config_func.php:140
+msgid   "number-8"
+msgstr  "Numero-8"
+
+#: ../config_func.php:139 ../config_func.php:140
+msgid   "prop"
+msgstr  "Pilone"
+
+#: ../config_func.php:139 ../config_func.php:140
+msgid   "scrum-half"
+msgstr  "Mediano di mischia"
+
+#: ../config_func.php:139 ../config_func.php:140
+msgid   "wing"
+msgstr  "Ala"
+
+#: ../config_func.php:212 ../config_func.php:213 ../test.crud.php:54
+msgid   "e.required"
+msgstr  ""
+
+#: ../config_func.php:213 ../config_func.php:214 ../config_func.php:215
+#: ../test.crud.php:55 ../test.crud.php:56
+msgid   "e.not-valid"
+msgstr  ""
+
+#: ../config_func.php:215 ../config_func.php:216 ../test.crud.php:57
+msgid   "e.not-valid-option"
+msgstr  ""
+
+#: ../config_func.php:216 ../config_func.php:217 ../test.crud.php:58
+msgid   "e.not-unique"
+msgstr  ""
+
+#: ../config_func.php:217 ../config_func.php:218 ../test.crud.php:59
+msgid   "e.generic"
+msgstr  ""
+
+#: ../config_func.php:873 ../config_func.php:887 ../config_func.php:889
+#: ../config_func.php:890 ../config_func.php:899 ../config_func.php:901
+msgid   "tanks, the administrator"
+msgstr  "Grazie, l'amministratore"
+
+#: ../config_func.php:879 ../config_func.php:893 ../config_func.php:895
+#: ../config_func.php:896 ../config_func.php:905 ../config_func.php:907
+msgid   "login details"
+msgstr  ""
+
+#: ../config_func.php:889 ../config_func.php:891 ../config_func.php:892
+#: ../config_func.php:901 ../config_func.php:903
+msgid   "This is an automatic response. Dont reply to this email"
+msgstr  "Questa è una risposta automatica. Non rispondere a questa email"
+
+#: ../config_func.php:894
+#, php-format
+msgid   "welcome %s, here you data:"
+msgstr  ""
+
+#: ../config_func.php:895
+msgid   "login"
+msgstr  ""
+
+#: ../config_func.php:896
+msgid   "password"
+msgstr  ""
+
+#: ../config_func.php:898
+msgid   "click here to login"
+msgstr  ""
+
+#: ../index.php:66
+msgid   "level.anonymous"
+msgstr  "Anonimo"
+
+#: ../index.php:67
+msgid   "level.guest"
+msgstr  "Ospite"
+
+#: ../index.php:68
+msgid   "level.secretary"
+msgstr  "Segretario"
+
+#: ../index.php:69
+msgid   "level.liaison-officer"
+msgstr  "Accompagnatore"
+
+#: ../index.php:71 ../index.php:72 ../index.php:88
+msgid   "level.admin"
+msgstr  "Amministratore"
+
+#: ../index.php:73 ../index.php:74 ../index.php:90
+msgid   "level.player"
+msgstr  "Giocatore"
+
+#: ../index.php:74 ../index.php:75 ../index.php:91
+msgid   "level.player-forward"
+msgstr  "Giocatore Avanti"
+
+#: ../index.php:75 ../index.php:76 ../index.php:92
+msgid   "level.player-back"
+msgstr  "Giocatore 3-quarti"
+
+#: ../index.php:76 ../index.php:77 ../index.php:93
+msgid   "level.player-3"
+msgstr  "Leader"
+
+#: ../index.php:77 ../index.php:78 ../index.php:94
+msgid   "level.player-4"
+msgstr  "Capitano"
+
+#: ../index.php:79 ../index.php:80 ../index.php:96
+msgid   "level.staff.groups-1-2"
+msgstr  "Staff"
+
+#: ../index.php:81 ../index.php:82 ../index.php:98
+msgid   "level.staff.group-1"
+msgstr  "Staff Tecnico"
+
+#: ../index.php:82 ../index.php:83 ../index.php:99
+msgid   "level.manager"
+msgstr  "Dirigente"
+
+#: ../index.php:83 ../index.php:84 ../index.php:100
+msgid   "level.coach"
+msgstr  "Allenatore"
+
+#: ../index.php:84 ../index.php:85 ../index.php:101
+msgid   "level.trainer"
+msgstr  "Preparatore"
+
+#: ../index.php:85 ../index.php:86 ../index.php:102
+msgid   "level.referee"
+msgstr  "Arbitro"
+
+#: ../index.php:87 ../index.php:88 ../index.php:104
+msgid   "level.staff.group-2"
+msgstr  "Staff Medico"
+
+#: ../index.php:88 ../index.php:89 ../index.php:105
+msgid   "level.doctor"
+msgstr  "Dottore"
+
+#: ../index.php:89 ../index.php:90 ../index.php:106
+msgid   "level.physio"
+msgstr  "Fisioterapista"
+
+#: ../index.php:90 ../index.php:91 ../index.php:92 ../index.php:107
+#: ../index.php:108
+msgid   "level.niu"
+msgstr  ""
+
+#: ../index.php:93 ../index.php:94 ../index.php:110
+msgid   "level.staff.group-3"
+msgstr  ""
+
+#: ../index.php:94 ../index.php:95 ../index.php:111
+msgid   "level.editor-core"
+msgstr  "Editor Profondo"
+
+#: ../index.php:95 ../index.php:96 ../index.php:112
+msgid   "level.editor-clips"
+msgstr  "Editor Filmati"
+
+#: ../index.php:96 ../index.php:97 ../index.php:113
+msgid   "level.editor-stats"
+msgstr  "Editor Statistiche"
+
+#: ../index.php:97 ../index.php:98 ../index.php:114
+msgid   "level.editor-surveys"
+msgstr  "Editor Sondaggi"
+
+#: ../index.php:111 ../index.php:112 ../index.php:128
+msgid   "Clips"
+msgstr  "Filmati"
+
+#: ../index.php:115 ../index.php:116 ../p_dbadmin.php:15
+msgid   "Login"
+msgstr  ""
+
+#: ../index.php:116 ../index.php:117 ../index.php:133 ../p_home.php:37
+msgid   "Logout"
+msgstr  ""
+
+#: ../index.php:116 ../index.php:132 ../p_dbadmin.php:15 ../p_login.php:75
+#: ../p_login.php:78
+msgid   "p.login"
+msgstr  "Accesso"
+
+#: ../index.php:117 ../p_home.php:36
+msgid   "i.idx.help"
+msgstr  "Help"
+
+#: ../index.php:119
+msgid   "i.idx.clipsXteam"
+msgstr  "Squadra"
+
+#: ../index.php:120
+msgid   "i.idx.clipsXmatch"
+msgstr  "Partita"
+
+#: ../index.php:121
+msgid   "i.idx.clipsXplayer"
+msgstr  "Giocatore"
+
+#: ../index.php:121 ../index.php:122 ../index.php:133 ../index.php:134
+#: ../index.php:150
+msgid   "i.idx.clips_library"
+msgstr  "Libreria"
+
+#: ../index.php:122 ../index.php:123
+msgid   "i.idx.stats"
+msgstr  "Statistiche"
+
+#: ../index.php:123 ../index.php:124 ../index.php:140
+msgid   "Li"
+msgstr  "Revisioni"
+
+#: ../index.php:124 ../index.php:125 ../index.php:141
+msgid   "Stats"
+msgstr  "Statistiche"
+
+#: ../index.php:125 ../index.php:126 ../index.php:142
+msgid   "Summa"
+msgstr  ""
+
+#: ../index.php:127 ../index.php:128
+msgid   "i.idx.tools_editors"
+msgstr  "Strumenti per gli Editori"
+
+#: ../index.php:128 ../index.php:129
+msgid   "i.idx.edit_library"
+msgstr  "Gestione Libreria"
+
+#: ../index.php:129 ../index.php:130
+msgid   "i.idx.edit_attributes"
+msgstr  "Attributi per libreria"
+
+#: ../index.php:130 ../index.php:131
+msgid   "i.idx.edit_events"
+msgstr  "Campionati/Eventi"
+
+#: ../index.php:131 ../index.php:132
+msgid   "i.idx.edit_matches"
+msgstr  "Partite/Allenamenti"
+
+#: ../index.php:132 ../index.php:133 ../index.php:136 ../index.php:138
+#: ../index.php:139 ../index.php:155
+msgid   "i.idx.edit_teams"
+msgstr  "Squadre"
+
+#: ../index.php:133 ../index.php:134 ../index.php:137 ../index.php:139
+#: ../index.php:140 ../index.php:156
+msgid   "i.idx.edit_players"
+msgstr  "Giocatori"
+
+#: ../index.php:134 ../index.php:135
+msgid   "i.idx.edit_referee"
+msgstr  "Arbitri"
+
+#: ../index.php:135 ../index.php:136 ../index.php:140 ../index.php:141
+#: ../index.php:157
+msgid   "i.idx.edit_tags"
+msgstr  "Modifica tags statistici"
+
+#: ../index.php:135 ../index.php:137 ../index.php:138 ../index.php:154
+msgid   "i.idx.matches"
+msgstr  "Partite, allenamenti, eventi"
+
+#: ../index.php:136 ../index.php:137 ../index.php:141 ../index.php:142
+#: ../index.php:158
+msgid   "i.idx.edit_stats"
+msgstr  "Statistica profonda"
+
+#: ../index.php:138 ../index.php:139 ../index.php:142
+msgid   "i.idx.tools_admin"
+msgstr  "Strumenti amministrativi"
+
+#: ../index.php:139 ../index.php:140 ../index.php:144 ../index.php:145
+#: ../index.php:161 ../p_users.php:175
+msgid   "i.idx.edit_users"
+msgstr  "Utenti"
+
+#: ../index.php:140 ../index.php:141 ../index.php:145 ../index.php:146
+#: ../index.php:162
+msgid   "i.idx.edit_sharing"
+msgstr  "Condivisione"
+
+#: ../index.php:141 ../index.php:142 ../index.php:145 ../index.php:146
+#: ../index.php:147 ../index.php:163
+msgid   "i.idx.edit_DB"
+msgstr  "Gestione DB"
+
+#: ../index.php:142 ../index.php:143 ../index.php:147 ../index.php:148
+#: ../index.php:164
+msgid   "i.idx.configuration"
+msgstr  "Configurazione"
+
+#: ../locale.php:92 ../locale.php:93
+msgid   "Let’s make the web multilingual."
+msgstr  ""
+
+#: ../locale.php:93 ../locale.php:94
+msgid   "We connect developers and translators around the globe on Lingohub "
+        "for a fantastic localization experience."
+msgstr  ""
+
+#: ../locale.php:94 ../locale.php:95
+#, php-format
+msgid   "Welcome back, %1$s! Your last visit was on %2$s"
+msgstr  ""
+
+#: ../locale.php:98 ../locale.php:99 ../locale.php:100
+#, php-format
+msgid   "%d page read."
+msgid_plural    "%d pages read."
+msgstr[0]       ""
+msgstr[1]       ""
+
+#: ../p_edit_config.php:5
+msgid   "h.cfg.site-logo"
+msgstr  "Immagine, logo, che identifichi questo sito Rugby Assistant"
+
+#: ../p_edit_config.php:5
+msgid   "l.cfg.site-logo"
+msgstr  "Logo"
+
+#: ../p_edit_config.php:6
+msgid   "h.cfg.site-name"
+msgstr  "Nome lungo per questo sito Rugby Assistant es.: Rugby Lupi Assisi"
+
+#: ../p_edit_config.php:6
+msgid   "l.cfg.site-name"
+msgstr  "Nome Sito"
+
+#: ../p_edit_config.php:7
+msgid   "h.cfg.site-short-name"
+msgstr  "Nome breve per questo sito Rugby Assistant es.: RLA"
+
+#: ../p_edit_config.php:7
+msgid   "l.cfg.site-short-name"
+msgstr  "Nome breve sito"
+
+#: ../p_edit_config.php:8
+msgid   "h.cfg.secret-key"
+msgstr  "Chiave SEGRETA, unica per ogni sito, serve per crittografare "
+        "password ed altro. DA NON DIVULGARE!"
+
+#: ../p_edit_config.php:8
+msgid   "l.cfg.secret-key"
+msgstr  "Chiave Segreta"
+
+#: ../p_edit_config.php:9 ../p_edit_config.php:10
+msgid   "h.cfg.locale"
+msgstr  "Lingua e localismi di data e numero di default: ogni utente può "
+        "scegliersi la propria altrimenti cade su questa"
+
+#: ../p_edit_config.php:9
+msgid   "h.cfg.public-key"
+msgstr  "Chiave pubblica, unica per ogni sito, che serve per identificarlo "
+        "rispetto ad altri. Divulgabile..."
+
+#: ../p_edit_config.php:9 ../p_edit_config.php:10
+msgid   "l.cfg.locale"
+msgstr  "Lingua"
+
+#: ../p_edit_config.php:9
+msgid   "l.cfg.public-key"
+msgstr  "Chiave Pubblica"
+
+#: ../p_edit_config.php:10 ../p_edit_config.php:11
+msgid   "h.cfg.timezone"
+msgstr  "Fuso orario corrente utile per mettere la datat giusta nei "
+        "salvataggi nel db e filesistem"
+
+#: ../p_edit_config.php:10 ../p_edit_config.php:11
+msgid   "l.cfg.time-zone"
+msgstr  "Fuso orario"
+
+#: ../p_edit_config.php:11 ../p_edit_config.php:12
+msgid   "h.cfg.name"
+msgstr  "nome utente Amministratore es.: Marco Bollesan."
+
+#: ../p_edit_config.php:11 ../p_edit_config.php:12
+msgid   "l.cfg.name"
+msgstr  "Nome Amministratore"
+
+#: ../p_edit_config.php:13 ../p_edit_config.php:14
+msgid   "h.cfg.email"
+msgstr  "Email Amministratore"
+
+#: ../p_edit_config.php:13 ../p_edit_config.php:14
+msgid   "l.cfg.email"
+msgstr  "Email"
+
+#: ../p_edit_config.php:14 ../p_edit_config.php:15
+msgid   "h.cfg.pwd"
+msgstr  "Passoword dell'amministratore globale (con login: admin, non "
+        "modificabile). Una stringa formata di caratteri maiuscoli, minuscoli "
+        "e cifre. Lunga e varia per essere molto forte. Ricordatela!"
+
+#: ../p_edit_config.php:14 ../p_edit_config.php:15
+msgid   "l.cfg.pwd"
+msgstr  "Password"
+
+#: ../p_edit_config.php:15 ../p_edit_config.php:16
+msgid   "h.cfg.email-on-err"
+msgstr  "Se qualche errore capita voi che ti venga inviata una mail?"
+
+#: ../p_edit_config.php:15 ../p_edit_config.php:16
+msgid   "l.cfg.mail-on-err"
+msgstr  "Email on-error"
+
+#: ../p_edit_config.php:16 ../p_edit_config.php:17
+msgid   "h.cfg.analytics-key"
+msgstr  "Google Analytics key per vedere chi,come,dove accede al sito. "
+        "https://analytics.google.com/ per ottenerla."
+
+#: ../p_edit_config.php:16 ../p_edit_config.php:17
+msgid   "l.cfg.analytics-key"
+msgstr  "Analytics key"
+
+#: ../p_edit_config.php:17 ../p_edit_config.php:18
+msgid   "h.cfg.youtube-key"
+msgstr  "Chiave developer per funzionalità avanzate di query a Youtube (non "
+        "necessaria al momento)."
+
+#: ../p_edit_config.php:17 ../p_edit_config.php:18
+msgid   "l.cfg.youtube-key"
+msgstr  "Youtube key"
+
+#: ../p_edit_config.php:18 ../p_edit_config.php:19
+msgid   "h.cfg.clips-path"
+msgstr  "Directory delle clips tagliate con VLC (RA < v3.0)"
+
+#: ../p_edit_config.php:18 ../p_edit_config.php:19
+msgid   "l.cfg.clips-path"
+msgstr  "Clips path"
+
+#: ../p_edit_config.php:19 ../p_edit_config.php:20
+msgid   "h.cfg.clips-pattern"
+msgstr  "Estensione clips da considerare per le clips tagliate con VLC (RA < "
+        "v3.0)"
+
+#: ../p_edit_config.php:19 ../p_edit_config.php:20
+msgid   "l.cfg.clips-pattern"
+msgstr  "Clip ext"
+
+#: ../p_edit_config.php:20 ../p_edit_config.php:21
+msgid   "h.cfg.host-check"
+msgstr  "Verifica scrittura per i file e le directory qui elencate. Se non "
+        "scivibili dovete risolvere il problema es.: filezilla > tasto dx "
+        "mouse sul nome file > permessi"
+
+#: ../p_edit_config.php:20 ../p_edit_config.php:21
+msgid   "l.cfg.host-check"
+msgstr  "Verifica scrittura"
+
+#: ../p_edit_config.php:29 ../p_edit_config.php:30
+msgid   "i.cfg.not-writable"
+msgstr  "Non scrivibile"
+
+#: ../p_edit_config.php:29 ../p_edit_config.php:30
+msgid   "i.cfg.writable"
+msgstr  "Scrivibile"
+
+#: ../p_edit_config.php:91 ../p_edit_config.php:92
+#, php-format
+msgid   "file %s (%s) no write permission"
+msgstr  "Il file %s (%s) non ha permessi in scrittura, prego provvedere."
+
+#: ../p_edit_config.php:92 ../p_edit_config.php:93
+#, php-format
+msgid   "file %s, write error: %s"
+msgstr  "File %s, errore in scrittura %s"
+
+#: ../p_edit_config.php:112 ../p_edit_config.php:113
+msgid   "i.cfg.saved"
+msgstr  "Configurazione salvata. Come amministratore puoi modificarla "
+        "successivamente."
+
+#: ../p_edit_config.php:115 ../p_edit_config.php:116 ../p_login.php:50
+#: ../p_login.php:53
+msgid   "e.unrecognized_action"
+msgstr  "Azione non riconosciuta"
+
+#: ../p_edit_config.php:119 ../p_edit_config.php:120
+msgid   "i.cfg.done!"
+msgstr  "Configurazione Fatta!"
+
+#: ../p_edit_config.php:120
+msgid   "i.cfg.done"
+msgstr  "Fatto!"
+
+#: ../p_edit_config.php:141 ../p_edit_config.php:142
+msgid   "p.configuration"
+msgstr  "Configurazione"
+
+#: ../p_edit_config.php:149 ../p_edit_config.php:150
+msgid   "home"
+msgstr  ""
+
+#: ../p_edit_tags.php:24 ../stt_sets.05.php:26
+msgid   "What"
+msgstr  ""
+
+#: ../p_edit_tags.php:24 ../stt_sets.05.php:26
+msgid   "write new or select"
+msgstr  ""
+
+#: ../p_edit_tags.php:25 ../stt_sets.05.php:27
+msgid   "How"
+msgstr  ""
+
+#: ../p_edit_tags.php:26 ../p_edit_tags.php:35 ../stt_sets.05.php:28
+#: ../stt_sets.05.php:37
+msgid   "Note"
+msgstr  ""
+
+#: ../p_edit_tags.php:27 ../stt_sets.05.php:29
+msgid   "Points"
+msgstr  ""
+
+#: ../p_edit_tags.php:28 ../stt_sets.05.php:30
+msgid   "Order"
+msgstr  ""
+
+#: ../p_edit_tags.php:34 ../stt_sets.05.php:36
+msgid   "Set of Tags"
+msgstr  ""
+
+#: ../p_edit_tags.php:34 ../stt_sets.05.php:36
+msgid   "min 3 max 30 chr"
+msgstr  ""
+
+#: ../p_edit_tags.php:35 ../stt_sets.05.php:37
+msgid   "max 255 chr"
+msgstr  ""
+
+#: ../p_edit_tags.php:69 ../p_users.php:83 ../p_users.php:84
+#: ../stt_sets.05.php:66
+msgid   "Unknown User id"
+msgstr  ""
+
+#: ../p_edit_tags.php:75 ../stt_sets.05.php:72
+msgid   "give a new name"
+msgstr  ""
+
+#: ../p_edit_tags.php:94 ../p_edit_tags.php:209 ../stt_sets.05.php:91
+#: ../stt_sets.05.php:204
+msgid   "Save Error"
+msgstr  ""
+
+#: ../p_edit_tags.php:113 ../stt_sets.05.php:110
+msgid   "Save copy error"
+msgstr  ""
+
+#: ../p_edit_tags.php:122 ../stt_sets.05.php:119
+msgid   "Error checking if effaceable"
+msgstr  ""
+
+#: ../p_edit_tags.php:123 ../stt_sets.05.php:120
+msgid   "Cant delete, there are stats with this SET!"
+msgstr  ""
+
+#: ../p_edit_tags.php:125 ../stt_sets.05.php:122
+msgid   "Error in delete tags"
+msgstr  ""
+
+#: ../p_edit_tags.php:126 ../stt_sets.05.php:123
+msgid   "Error in delete set"
+msgstr  ""
+
+#: ../p_edit_tags.php:170 ../stt_sets.05.php:166
+msgid   "Unknown Tag id"
+msgstr  ""
+
+#: ../p_edit_tags.php:182 ../p_edit_tags.php:221 ../stt_sets.05.php:178
+#: ../stt_sets.05.php:216
+msgid   "This tag is already used in stats, untouchable"
+msgstr  ""
+
+#: ../p_edit_tags.php:236 ../p_users.02.php:149 ../p_users.php:151
+#: ../p_users.php:152 ../stt_sets.05.php:231
+msgid   "Done!"
+msgstr  ""
+
+#: ../p_edit_tags.php:261 ../stt_sets.05.php:256
+msgid   "Do you want to copy this TAG?"
+msgstr  ""
+
+#: ../p_edit_tags.php:262 ../stt_sets.05.php:257
+msgid   "Do you want to delete this TAG?"
+msgstr  ""
+
+#: ../p_edit_tags.php:263 ../stt_sets.05.php:258
+msgid   "Do you want to copy this SET and all his TAGS?"
+msgstr  ""
+
+#: ../p_edit_tags.php:264 ../stt_sets.05.php:259
+msgid   "Do you want to delete this SET and all his TAGS?"
+msgstr  ""
+
+#: ../p_edit_tags.php:265 ../stt_sets.05.php:260
+msgid   "This action can not be undone."
+msgstr  ""
+
+#: ../p_edit_tags.php:376
+msgid   "Copy"
+msgstr  ""
+
+#: ../p_edit_tags.php:377 ../p_users.php:234 ../p_users.php:235
+msgid   "Delete"
+msgstr  ""
+
+#: ../p_edit_tags.php:397 ../p_edit_tags.php:407
+msgid   "Sets"
+msgstr  ""
+
+#: ../p_edit_tags.php:398 ../p_edit_tags.php:409 ../p_users.php:221
+#: ../p_users.php:222 ../p_users.php:235 ../p_users.php:236 ../p_users.php:267
+#: ../p_users.php:268
+msgid   "New"
+msgstr  ""
+
+#: ../p_edit_tags.php:408
+msgid   "Tags"
+msgstr  ""
+
+#: ../p_home.php:21
+msgid   "Menu"
+msgstr  ""
+
+#: ../p_home.php:21
+msgid   "i.home.menu"
+msgstr  ""
+
+#: ../p_home.php:35
+msgid   "Close"
+msgstr  ""
+
+#: ../p_home.php:35
+msgid   "i.home.close"
+msgstr  ""
+
+#: ../p_home.php:35
+msgid   "i.idx.close"
+msgstr  ""
+
+#: ../p_home.php:36
+msgid   "i.home.info"
+msgstr  ""
+
+#: ../p_home.php:37
+msgid   "i.home.logout"
+msgstr  ""
+
+#: ../p_home.php:37
+msgid   "i.idx.logout"
+msgstr  ""
+
+#: ../p_home.php:38
+msgid   "Available Languages"
+msgstr  "Lingue disponibili"
+
+#: ../p_login.php:27
+msgid   "e.login.admin_deleted_in_db"
+msgstr  ""
+
+#: ../p_login.php:29 ../p_login.php:30 ../p_login.php:46 ../p_login.php:49
+msgid   "e.login.disabled"
+msgstr  "Utente disabilitato, contattare l'amministratore."
+
+#: ../p_login.php:30 ../p_login.php:31
+msgid   "e.login.usernotfound"
+msgstr  "Utente non riconosciuto, utilizzare la corretto nome-utente e "
+        "password."
+
+#: ../p_login.php:40 ../p_login.php:43
+msgid   "i.login.mail_sent"
+msgstr  "La password è stata inviata, prego controlli la sua e-mail."
+
+#: ../p_login.php:41 ../p_login.php:44
+msgid   "i.login.mail_fail"
+msgstr  "Fallito l'invio mail con i dati di accesso, riprovi."
+
+#: ../p_login.php:47 ../p_login.php:50
+msgid   "e.login.mailnotfound"
+msgstr  "La mail inserita non è associata ad alcun utente abilitato."
+
+#: ../p_login.php:47 ../p_login.php:108 ../p_login.php:111 ../p_login.php:131
+msgid   "h.login_forgot"
+msgstr  "Inserire l'e-mail, la password vi verrà inviata"
+
+#: ../p_login.php:54 ../p_login.php:57
+msgid   "i.login.done"
+msgstr  "Fatto!"
+
+#: ../p_login.php:88 ../p_login.php:91 ../p_login.php:111
+msgid   "l.login.email"
+msgstr  "Utente"
+
+#: ../p_login.php:89 ../p_login.php:92 ../p_login.php:112
+msgid   "l.login.pwd"
+msgstr  "Password"
+
+#: ../p_login.php:90 ../p_login.php:93 ../p_login.php:113
+msgid   "l.login.remind"
+msgstr  "Ricordami"
+
+#: ../p_login.php:100 ../p_login.php:103 ../p_login.php:123
+msgid   "b.login"
+msgstr  "Accedi"
+
+#: ../p_login.php:101 ../p_login.php:104 ../p_login.php:124
+msgid   "b.login_forgot"
+msgstr  "Password dimenticata"
+
+#: ../p_login.php:109 ../p_login.php:112 ../p_login.php:131 ../p_login.php:132
+msgid   "l.login_forgot.email"
+msgstr  "Inserire l'e-mail, la password vi verrà inviata"
+
+#: ../p_login.php:110 ../p_login.php:113 ../p_login.php:133
+msgid   "h.login_forgot.your@email"
+msgstr  "la_tua@email.qui"
+
+#: ../p_login.php:113 ../p_login.php:116 ../p_login.php:136
+msgid   "b.login_forgot.submit"
+msgstr  "Invio"
+
+#: ../p_users.02.php:2
+msgid   "** live empty to not change"
+msgstr  ""
+
+#: ../p_users.02.php:2 ../p_users.php:2
+msgid   "usr.p.live_empty"
+msgstr  "** lascia vuoto per non modificare"
+
+#: ../p_users.02.php:3
+msgid   "** self-generate if empty"
+msgstr  ""
+
+#: ../p_users.02.php:3 ../p_users.php:3
+msgid   "usr.p.self_generate"
+msgstr  "** auto-generata se vuoto"
+
+#: ../p_users.02.php:4
+msgid   "tua@mail.qui"
+msgstr  ""
+
+#: ../p_users.02.php:4
+msgid   "usr.p.valid_mail"
+msgstr  "una_mail_valida@qui.grazie"
+
+#: ../p_users.02.php:119
+msgid   "impossibile salvare"
+msgstr  ""
+
+#: ../p_users.02.php:121
+msgid   "salvato"
+msgstr  ""
+
+#: ../p_users.02.php:129
+msgid   "e.login.mail_sent"
+msgstr  ""
+
+#: ../p_users.02.php:130
+msgid   "e.login.mail_fail"
+msgstr  ""
+
+#: ../p_users.02.php:142
+msgid   "eliminato"
+msgstr  ""
+
+#: ../p_users.php:2
+msgid   "usr.l.live_empty"
+msgstr  ""
+
+#: ../p_users.php:3
+msgid   "usr.l.self_generate"
+msgstr  ""
+
+#: ../p_users.php:4
+msgid   "usr.l.valid_mail"
+msgstr  ""
+
+#: ../p_users.php:4
+msgid   "your.mail@here.please"
+msgstr  ""
+
+#: ../p_users.php:21
+msgid   "usr.h.photo"
+msgstr  "Caricate e modificate l'immagine con i comandi a disposizione."
+
+#: ../p_users.php:21
+msgid   "usr.l.photo"
+msgstr  "Fotografia"
+
+#: ../p_users.php:22
+msgid   "usr.h.enabled"
+msgstr  "Utente abilitato ad accedere."
+
+#: ../p_users.php:22
+msgid   "usr.l.enabled"
+msgstr  "Abilitato"
+
+#: ../p_users.php:23
+msgid   "usr.h.name"
+msgstr  "Nome e cognome dell'utente es.: Marco Bollesan"
+
+#: ../p_users.php:23
+msgid   "usr.l.name"
+msgstr  "Nome e Cognome"
+
+#: ../p_users.php:24
+msgid   "usr.h.login"
+msgstr  "L' Utente di accesso senza spazi e tutto minuscolo. Minimo 2, max 50 "
+        "caratteri. No accentate o caratteri strani. Di solito Di solito "
+        "l'iniziale del nome e tutto il cognome es.: Marco Bollesan = "
+        "mbollesan. "
+
+#: ../p_users.php:24
+msgid   "usr.l.login"
+msgstr  "Utente"
+
+#: ../p_users.php:25
+msgid   "usr.h.pwd"
+msgstr  "Minimo 5 max 20 lettere, caratteri strani (_!@#$%), numeri. No "
+        "accentate e spazi"
+
+#: ../p_users.php:25
+msgid   "usr.l.pwd"
+msgstr  "Password"
+
+#: ../p_users.php:26
+msgid   "usr.h.email"
+msgstr  "Mail dell utente, verrà usata per le comunicazioni!"
+
+#: ../p_users.php:26
+msgid   "usr.l.email"
+msgstr  "Email"
+
+#: ../p_users.php:27
+msgid   "usr.h.level"
+msgstr  "Per gestire cosa può vedere o modificare."
+
+#: ../p_users.php:27
+msgid   "usr.l.level"
+msgstr  "Livello di accesso"
+
+#: ../p_users.php:28
+msgid   "usr.h.lang"
+msgstr  "Lingua e localismi di data e numero."
+
+#: ../p_users.php:28 ../p_users.php:29
+msgid   "usr.h.sendmail"
+msgstr  "Seleziona questo campo se vuoi che, alla fine della registrazione, "
+        "venga spedita una mail all'utente con i suoi dati di accesso."
+
+#: ../p_users.php:28
+msgid   "usr.l.lang"
+msgstr  "Lingua utente"
+
+#: ../p_users.php:28 ../p_users.php:29
+msgid   "usr.l.sendmail"
+msgstr  "Mail all'utente"
+
+#: ../p_users.php:117 ../p_users.php:118
+msgid   "Save failed, try again."
+msgstr  "Salvataggio fallito"
+
+#: ../p_users.php:128 ../p_users.php:129
+#, php-format
+msgid   "Saved, Mail to %s sent, please check."
+msgstr  ""
+
+#: ../p_users.php:129 ../p_users.php:130
+#, php-format
+msgid   "Saved but Mail to %s failed."
+msgstr  ""
+
+#: ../p_users.php:131 ../p_users.php:132
+msgid   "Saved"
+msgstr  ""
+
+#: ../p_users.php:140 ../p_users.php:141
+msgid   "Can not delete Admin."
+msgstr  "Non si puà cancellare Admin"
+
+#: ../p_users.php:144 ../p_users.php:145
+msgid   "Deleted"
+msgstr  ""
+
+#: ../p_users.php:147 ../p_users.php:148
+msgid   "Unrecognized action."
+msgstr  ""
+
+#: ../p_users.php:175 ../p_users.php:176
+msgid   "Users"
+msgstr  ""
+
+#: ../p_users.php:222 ../p_users.php:223 ../p_users.php:236 ../p_users.php:237
+msgid   "Update"
+msgstr  ""
+
+#: ../p_users.php:275 ../p_users.php:276
+msgid   "Enabled"
+msgstr  ""
+
+#: ../p_users.php:276 ../p_users.php:277
+msgid   "Disabled"
+msgstr  ""
+
+#: ../p_users.php:286 ../p_users.php:287
+msgid   "List"
+msgstr  ""
+
+#: ../p_users.php:288 ../p_users.php:289
+msgid   "Save"
+msgstr  ""
+
+#: ../testdir.php:7
+msgid   "testo libero"
+msgstr  ""

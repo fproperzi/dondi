@@ -1,0 +1,53 @@
+<template>
+  <div class="page">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="back link">
+            <i class="icon icon-back"></i>
+            <span class="if-not-md">{{_e 'Back'}}</span>
+          </a>
+        </div>
+        <div class="title">{{_e 'Authors'}}</div>
+      </div>
+    </div>
+    <div class="page-content">
+
+      <div class="list links-list">
+        <ul>
+          {{#each rs}}
+			<li>
+				<a href="/authors/{{this.id}}" class="item-content item-link">
+					<div class="item-inner">
+						<div class="item-title">{{this.name}}</div>
+					</div>
+				</a>
+              </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+return {
+
+	methods: {
+		openAlert: function () {
+			var self = this;
+			self.$app.dialog.alert('Hello world!');
+         },
+	},
+	on: {
+		pageInit: function (e, page) {
+          // do something on page init
+		  console.log('pageInit');
+		},
+		pageAfterOut: function (e, page) {
+          // page has left the view
+		  console.log('pageAfterOut');
+		},
+     }
+}
+</script>

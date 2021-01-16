@@ -1,0 +1,82 @@
+<html><head>
+<title>login</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<link type="text/css" rel="stylesheet" href="css/rr.css">
+<script type="text/javascript" src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script type="text/javascript" src="js/rr.js?l=i18n/it.json"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+
+</head>
+<body class="ui-mobile-viewport"> 
+    
+
+
+<div id="page-usr-signin" data-role="page" data-theme="b">
+	<div data-role="header" data-position="fixed"  data-tap-toggle="false" >
+		 <h1 data-i18n="signin">Sign-in</h1>
+	</div>
+   <div data-role="content" >   
+
+
+<ul data-role="listview">
+  <li data-role="collapsible" data-iconpos="right" data-inset="false">
+    <h2>Birds</h2>
+    <ul data-role="listview" data-theme="b">
+      <li><a href="#">Condor</a></li>
+      <li><a href="#">Eagle</a></li>
+      <li data-role="collapsible" data-iconpos="right" data-inset="false">
+        <h2>Fish</h2>
+        <ul data-role="listview" data-theme="b">
+          <li><a href="#">Salmon</a><href="#"></a></li>
+          <li><a href="#">Pollock</a></li>
+            
+            <li data-role="collapsible" data-iconpos="right" data-inset="false">
+            <h2>Choose your preference</h2>
+            <form>
+              <fieldset data-role="controlgroup" data-type="horizontal">
+                <label>Birds<input type="checkbox" id="choose-birds-regular"></label>
+                <label>Humans<input type="checkbox" id="choose-humans-regular"></label>
+                <label>Fish<input type="checkbox" id="choose-fish-regular"></label>
+              </fieldset>
+            </form>
+          </li>
+          
+           <li data-role="collapsible" data-iconpos="right" data-inset="false">
+            <h2>checkbox</h2>
+                  <fieldset data-role="controlgroup">
+                    <label><input type="checkbox" name="r[]"/>4.1 <a href="#" data-role="button" data-inline="true">G</a></label>
+                    <label><input type="checkbox" name="r[]"/>4.2</label>
+                    <label><input type="checkbox" name="r[]"/>4.3</label>
+                    <label><input type="checkbox" name="r[]"/>4.4</label>
+                </fieldset>
+            </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#">Humans</a></li>
+  
+
+</ul>
+
+
+
+</div><!-- /content --> 
+    <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+        <div data-role="navbar" data-iconpos="right">
+            <ul>    
+                <li><a href="#page-usr-forgot" data-icon="carat-r">forgot</a></li>
+                <li><a href="#pop-usr-forgot" data-icon="carat-r">pop forgot</a></li>
+                <li><a href="#page-usr-reset" data-icon="carat-r">reset</a></li>
+                <li><a href="#page-usr-signup" data-icon="carat-r">signup</a></li>
+
+            </ul>
+        </div><!-- /navbar -->
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+</body></html>

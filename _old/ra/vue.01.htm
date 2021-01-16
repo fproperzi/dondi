@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+            html, body {margin: 5px;    padding: 0;}
+        </script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <ol>
+                <li v-for="todo in todos1">
+                {{ todo.text }}
+                </li>
+            </ol>
+            <p>{{ message }}</p>
+            <input v-model="message"><button v-on:click="reverseMessage">Reverse Message</button>
+            <ol>
+                <todo-item
+                    v-for="item in groceryList"
+                    v-bind:todo="item"
+                    v-bind:key="item.id">
+               </todo-item>
+            </ol>
+            <ol>
+                <todo-item
+                    v-for="item in butcheryList"
+                    v-bind:todo="item"
+                    v-bind:key="item.id">
+               </todo-item>
+            </ol>
+        </div>
+            
+        <script>
+Vue.component('todo-item', {
+  props : ['todo'],
+  template: '<li>{{todo.text}}</li>'
+})
+var app = new Vue({
+  el: '#app',
+  data: {
+    message:'ciao mondo vue!',
+    todos1: [
+      { text: 'Learn JavaScript' },
+      { text: 'Learn Vue' },
+      { text: 'Build something awesome' }
+    ],
+    groceryList: [
+        { id: 0, text: 'Vegetables' },
+        { id: 1, text: 'Cheese' },
+        { id: 2, text: 'Riso' }
+      ],
+    butcheryList: [
+        { id: 0, text: 'Fassona' },
+        { id: 1, text: 'Filetto' },
+        { id: 2, text: 'coscia di pollo' }
+      ]
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+});
+
+        
+        </script>
+        
+        
+    </body>
+</html>

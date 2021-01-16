@@ -1,0 +1,10 @@
+{
+    "welcome" 				: "Benvenuti in resources/lang/it.json",
+	"Done" 					: "Xe fatto",
+	"Not Found"  			: "Mi go no trovà",
+	"Created Successfully" 	: "Xe creà, bén",
+	"Registration Failed"	: "Xe andà tutto in mona",
+	"Updated Successfully"	: "Xe cambià, bén",
+	"Deleted Successfully"	: "Xe scançelà, bén",
+	"Delete Failed"			: "Non son bòn de scancelàr"
+}

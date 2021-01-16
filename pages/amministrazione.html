@@ -1,0 +1,60 @@
+<template>
+	<div class="page">
+		<div class="navbar">
+			<div class="navbar-bg"></div>
+			<div class="navbar-inner sliding">
+				<div class="left">
+					<a href="#" class="back link">
+						<i class="icon icon-back"></i>
+						<span class="if-not-md">{{_e 'Indietro'}}</span>
+					</a>
+				</div>
+				<div class="title">{{_e 'Amministrazione'}}</div>
+				<div class="right">
+					<!-- Link to enable searchbar -->
+					<a class="link icon-only searchbar-enable" data-searchbar=".searchbar-authors">
+						<i class="icon f7-icons if-not-md">search</i>
+						<i class="icon material-icons md-only">search</i>
+					</a>
+				</div>
+				<form data-search-container=".search-list" data-search-in=".item-link" class="searchbar searchbar-expandable searchbar-init searchbar-list">
+					<div class="searchbar-inner">
+						<div class="searchbar-input-wrap">
+							<input type="search" placeholder="Search">
+							<i class="searchbar-icon"></i>
+							<span class="input-clear-button"></span>
+						</div>
+						<span class="searchbar-disable-button if-not-aurora">{{_e 'Cancella'}}</span>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div class="page-content">	
+			<div class="block-title">{{_e 'Gestione dei valori per risorse:'}}</div>
+			<div class="list links-list search-list searchbar-found">
+				<ul>
+					<li><a href="/authors/"			class="item-link item-content">{{_e 'Autori'}}						</a></li>
+					<li><a href="/utenti/"			class="item-link item-content">{{_e 'Utenti'}}						</a></li>
+					<li><a href="/macchine/"		class="item-link item-content">{{_e 'Macchine'}}					</a></li>
+					<li><a href="/tipiimpianto/"	class="item-link item-content">{{_e 'Tipi Impianto'}}				</a></li>
+					<li><a href="/cer/"				class="item-link item-content">{{_e 'Codici CER'}}					</a></li>
+					<li><a href="/conferimenti/"	class="item-link item-content">{{_e 'Conferimenti'}}				</a></li>
+					<li><a href="/ordinarie/"		class="item-link item-content">{{_e 'Manutenzioni Ordinarie'}}		</a></li>
+					<li><a href="/straordinarie/"	class="item-link item-content">{{_e 'Manutenzioni Straordinarie'}}	</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</template>
+<script>
+  return {
+    methods: {
+      openAlert: function () {
+        var self = this;
+        self.$app.dialog.alert('Hello World');
+      },
+    },
+
+  }
+</script>

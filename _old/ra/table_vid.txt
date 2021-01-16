@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS "t_vid";
+CREATE TABLE "t_vid" (
+  "vid_id" integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+  "vid_type_id" integer NOT NULL,
+  "vid_source_id" integer NOT NULL,
+  "vid_label" text NULL,
+  "vid_path" text NOT NULL,
+  "vid_tag" text NULL,
+  "vid_note" text NULL,
+  "vid_deleted" integer NOT NULL DEFAULT '0',
+  "update_by" integer NULL,
+  "update_on" integer NULL,
+  
+);

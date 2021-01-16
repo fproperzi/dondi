@@ -1,0 +1,74 @@
+<template>
+	<div class="page">
+		<div class="navbar">
+			<div class="navbar-bg"></div>
+			<div class="navbar-inner sliding">
+				<div class="left">
+					<a href="#" class="back link">
+						<i class="icon icon-back"></i>
+						<span class="if-not-md">{{_e 'Home'}}</span>
+					</a>
+				</div>
+				<div class="title">{{_e 'Not Found'}}</div>
+			</div>
+		</div>
+		<div class="page-content">
+			<div class="block block-strong">
+				<p style="font-size:28px;">{{_e 'Requested content not found'}}</p>
+				
+			</div>
+			<div class="block-title">Extended Context</div>
+			<div class="block block-strong">
+			
+				<h4>$route</h4>
+				<p>Contains properties of the current route:</p>
+				<ul style="padding-left:25px">
+					<li><b>$route.url</b>: {{$route.url}}</li>
+					<li><b>$route.path</b>: {{$route.path}}</li>
+					<li><b>$route.params</b>: {{js 'return JSON.stringify(this.$route.params)'}}</li>
+					<li><b>$route.hash</b>: {{$route.hash}}</li>
+					<li><b>$route.query</b>: {{js 'return JSON.stringify(this.$route.query)'}}</li>
+				</ul>
+				
+				<h4>$root</h4>
+				<p>Root data & methods:</p>
+				<ul style="padding-left:25px">
+					<li><b>$root.user.firstName</b>: {{$root.user.firstName}}</li>
+					<li><b>$root.user.lastName</b>: {{$root.user.lastName}}</li>
+					
+					<li><a @click="$root.helloWorld()">$root.helloWorld()</a></li>
+				</ul>
+				
+				<h4>$props</h4>
+				<p>Properties passed to custom component as attributes:</p>
+				<ul style="padding-left:25px">
+					<li><b>$props</b>: {{js 'return JSON.stringify(this.$props)'}}</li>
+				</ul>
+				
+				<h4>$theme</h4>
+				<p>Currently active theme:</p>
+				<ul style="padding-left:25px">
+					<li><b>$theme.ios</b>: {{$theme.ios}}</li>
+					<li><b>$theme.md</b>: {{$theme.md}}</li>
+					<li><b>$theme.aurora</b>: {{$theme.aurora}}</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</template>
+<style>
+	p {
+    margin: 10px 0;
+	}
+</style>
+<script>
+	
+return {
+    methods: {
+      openAlert: function () {
+        var self = this;
+        self.$app.dialog.alert('Hello World');
+      },
+    },
+};
+</script>

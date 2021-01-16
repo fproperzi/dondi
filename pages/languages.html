@@ -1,0 +1,38 @@
+<template>
+<div class="list">
+	<ul>
+		<li>
+			<a class="item-link smart-select smart-select-init" data-css-class="views-no-swiping" data-page-back-link-text="{{localize 'back'}}">
+				<select name="language" @change="languageChange">
+					{{#each locales}}
+					<option value="{{@key}}" {{#js_if '@key == window.language'}} selected{{/js_if}}>{{language}}</option>
+					{{/each}}
+				</select>
+				<div class="item-content">
+					<div class="item-inner">
+						<div class="item-title">{{localize 'settingsLanguage'}}</div>
+					</div>
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>
+</template>
+<script>
+return {
+	methods: {
+		languageChange: function(e) {
+			var self = this;
+			var app = self.$app;
+			localStorage.setItem('language',e.target.value)
+			window.language = e.target.value;
+
+			self.$update();
+		},
+		openAlert: function () {
+			var self = this;
+			self.$app.dialog.alert('Hello World');
+		},
+	},
+}
+</script>

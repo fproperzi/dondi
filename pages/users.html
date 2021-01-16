@@ -1,0 +1,46 @@
+<template>
+  <div class="page">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner">
+        <div class="title">Profile</div>
+      </div>
+    </div>
+    <div class="page-content">
+      ${user && $h`
+        <!-- Show user list when it is loaded -->
+        <div class="list simple-list">
+          <ul>
+            <li>First Name: ${user.firstName}</li>
+            <li>email: ${user.email}</li>
+            <li>foto: ${user.age}</li>
+          </ul>
+        </div>
+      `}
+      ${!user && $h`
+        <!-- Otherwise show preloader -->
+        <div class="block block-strong text-align-center">
+          <div class="preloader"></div>
+        </div>
+      `}
+    </div>
+  </div>
+</template>
+<script>
+  export default (props, { $on, $f7, $update }) => {
+    // empty initial user data
+    let user = null;
+
+    $on('pageInit', () => {
+      // request user data on page init
+      $f7.request.get('api/public/users').then((res) => {
+        // update user with new data
+        user = res.data;
+        // trigger re-render
+        $update();
+      });
+    })
+
+    return $render;
+  }
+</script>

@@ -1,0 +1,88 @@
+{
+	"@metadata": {
+		"authors": ["kino","ng","ab"],
+		"last-updated": "2017-03-01",
+		"locale": "it",
+		"message-documentation": "qqq",
+		"application": "Rugby Assistant & Repository"
+	},
+
+    "@common-words":"------------------------",
+    "no": "no",
+    "yes":"si",
+    "submit":"Invia",
+    "ok":"Conferma",
+    "delete":"Cancella",
+    "cancel":"Annulla",
+    "password":"Password",
+    "save":"Salva",
+    "sign-in":"Accedi",
+	"sign-out":"Disconnettiti",
+    "sign-up":"Registrati",
+    "locked":"Disabilitato",
+    
+    "page-usr-signin" : {
+        "sign-in":"accedi",
+        "username":"Nome o Email",
+        "password":"Password",
+        "remember":"Ricordami per la prossima volta",
+        "forgot":"Password dimenticata?"
+    },
+    "page-usr-forgot" : {
+        "forgot":"Password dimenticata",
+        "email-required":"Email richiesta",
+        "email-required-help":"Le istruzioni su come resettare la password ti saranno inviate via mail",
+        "your-email":"Email",
+        "check-inbox":"Controlla la posta",
+        "check-inbox-help":"Ti sono state inviate le istruzioni su come resettare la tua password. Controlla la tua posta e segui le istruzioni nella mail"
+    },
+    "page-usr-reset" : {
+        "pwd-reset": "Ripristina la password",
+        "key-received": "Chiave ricevuta",
+        "new-pwd":"Nuova password",
+        "confirm-new-pwd":"Conferma la nuova password",
+        "reset":"Ripristina",
+        "pwd-resetted":"Password ripristinata",
+        "pwd-resetted-help":"La tua password è stata ripristinata e pronta per essere usata"
+    },
+    "page-usr-signup" : {
+        "full-name":"Nome e cognome",
+        "user-name":"Nome e di accesso",
+        "email-address":"Indirizzo email",
+        "confirm-password":"Conferma password",
+        "almost-done":"Un attimo ancora...",
+        "confirm-email":"Conferma il tuo indirizzo email",
+        "confirm-email-help":"Ti abbiamo inviato una mail con le istruzioni per confermare il tuo indirizzo email. Controlla la tua posta e segui le istruzioni dell'email"
+    },
+    "page-usr-profile" : {
+        "profile":"Tuo profilo",
+        "change-profile":"Cambia i tuoi dati",
+        "change-profile-help":"Here you can make changes to your profile. Please note that you will not be able to change your email,user-name which have been already registered.",
+        "username":"Nome utente",
+        "email":"Email",
+        "full-name":"Nome e cognome",
+        "phone":"Telefono",
+        "old-pwd":"Vecchia password",
+        "new-pwd":"Nuova password",
+        "confirm-new-pwd":"Conferma nuova password"
+    },
+    "page-usr-locked" : {
+        "locked":"Bloccato!",
+        "account-locked":"Accesso bloccato",
+        "account-locked-help":"Prego contatta l'amministratore per risolvere il problema"    
+    },
+    "page-usr-confirm" : {
+        "confirmed":"Confermato",
+        "account-confirmed":"Il tuo accesso è confermato",
+        "access-confirmed-help":"Procedi all'accesso",
+        "signin":"Accedi"
+    },
+    "page-usr-landing" : {
+        "welcome":"Benvenuto!",
+        "is-user":"Utente registrato",
+        "not-user":"Nuovo utente",
+        "signin":"Accedi",
+        "signup":"Registrati"       
+    }
+    
+}
