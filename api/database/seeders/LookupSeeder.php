@@ -108,7 +108,7 @@ class LookupSeeder extends Seeder {
 	["sqd","1","B3"],
 	["sqd","1","C1"],
 	["sqd","1","C2"],
-	["sqd","1","C3"],
+	["sqd","1","C3"], 
 
 ["acronimo","geg","gestione guasti","lk_gestione_guasti","f1:step,f2:gestione,f3:note"],
 	["geg","01","Segnalazione guasto"],
